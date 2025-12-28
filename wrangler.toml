@@ -1,0 +1,16 @@
+name = "dario-rss"
+main = "src/index.ts"
+compatibility_date = "2025-12-27"
+account_id = "3dc1944c1aabdb20168d6c12fc23abd1"
+workers_dev = true
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "b74378296cec4dd29cd098fc3eb43845"
+
+[[routes]]
+pattern = "dario-rss.marx.sh/*"
+zone_name = "marx.sh"
